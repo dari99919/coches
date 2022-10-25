@@ -1,6 +1,3 @@
-from turtle import color
-
-
 class Vehiculo():
 
     def __init__(self, color, ruedas):
@@ -19,3 +16,9 @@ class Coche(Vehiculo):
 
     def __str__(self):
         return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
+
+class Camioneta(Coche):
+
+    def __init__(self, color, ruedas, velocidad, cilindrada, carga):
+        super().__init__(color, ruedas, velocidad, cilindrada)
+        self.carga = carga
