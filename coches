@@ -42,4 +42,8 @@ class Motocicleta(Bicicleta):
         self.cilindrada = cilindrada
     
     def __str__(self):
-        return super().__str__() + "{} km/h, {}.co".format(self.velocidad, self.cilindrada)
+        return super().__str__() + "{} km/h, {}.cc".format(self.velocidad, self.cilindrada)
+
+    def catalogar(vehiculos):
+        for v in vehiculos :
+            print(type(v).__name__, v)
