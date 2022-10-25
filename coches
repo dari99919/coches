@@ -44,6 +44,13 @@ class Motocicleta(Bicicleta):
     def __str__(self):
         return super().__str__() + "{} km/h, {}.cc".format(self.velocidad, self.cilindrada)
 
-    def catalogar(vehiculos):
+def catalogar(vehiculos):
         for v in vehiculos :
             print(type(v).__name__, v)
+
+def catalogar(vehiculos, ruedas=None):
+    if ruedas != None:
+        contador = 0
+        for v in vehiculos:
+            if v.ruedas== ruedas:
+                contador += 1
