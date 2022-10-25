@@ -55,3 +55,10 @@ def catalogar(vehiculos, ruedas=None):
             if v.ruedas== ruedas:
                 contador += 1
         print("\n Se han encontrado {} vehiculos con {} ruedas:".format(contador, ruedas))
+
+        for v in vehiculos:
+            if ruedas == None:
+                print(type(v).__name__, v)
+            else:
+                if v.ruedas == ruedas:
+                    print(type(v).__name__, v)
