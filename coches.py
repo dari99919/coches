@@ -70,7 +70,4 @@ lista = [
     Motocicleta("negro", 2, "deportiva", 180, 900)
 ]
 
-catalogar(lista)
-catalogar(lista, 0)
-catalogar(lista, 2)
-catalogar(lista, 4)
+
